@@ -4,6 +4,7 @@
 - 比较的时候尝试先排序，这样不用遍历中途就可以break
   - 但是实际因为遍历的数组最长也就10，最终遍历反而比排序更节省时间
 
+
 # 解法
 ```go
 func numSmallerByFrequency(queries []string, words []string) []int {
