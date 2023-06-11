@@ -34,7 +34,7 @@ newInt(1) == oneInt // 无法编译  (mismatched types newInt and int)
 ## 指针类型
 - Java没有的东西
 - Go的指针和C一样，不过加了一些限制
-    1. Go中限制了指针类型转换`*int`不能转成`*byte*，C是可以的
+    1. Go中限制了指针类型转换`*int`不能转成`*byte`，C是可以的
         - 可以使用unsafe.Pointer方法强转
     2. Go中指针类型不能进行运算，C里可以的（用来实现一些hack操作）
         - 可以用unsafe.Pointer再加uintptr类型，组合实现指针运算
